@@ -4,14 +4,16 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-//import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './login/login.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    //LoginComponent
-    LandingpageComponent
+    LoginComponent,
+    LandingpageComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,

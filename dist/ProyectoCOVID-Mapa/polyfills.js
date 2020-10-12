@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/radagast/Documentos/ProyectoCOVID-Mapa/src/polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! C:\Users\alfon\Documents\APIS\ProyectoCOVID-Mapa\src\polyfills.ts */"hN/g");
 
 
 /***/ }),

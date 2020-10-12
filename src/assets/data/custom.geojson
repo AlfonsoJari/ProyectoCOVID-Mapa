@@ -1,0 +1,226 @@
+[
+    {
+        "capital": "Michoacán de Ocampo",
+        "longitud": 19.592093662002934,
+        "latitud": -101.72894682760807,
+        "info": "Total: 113 <br><a target='_blank' href=\"/data/mexico/michoacan-de-ocampo.json\">Descargar JSON</a>",
+        "children": "data/mexico/michoacan-de-ocampo.json"
+    },
+    {
+        "capital": "Coahuila de Zaragoza",
+        "longitud": 27.171975924532884,
+        "latitud": -101.55443024813405,
+        "info": "Total: 38 <br><a target='_blank' href=\"/data/mexico/coahuila-de-zaragoza.json\">Descargar JSON</a>",
+        "children": "data/mexico/coahuila-de-zaragoza.json"
+    },
+    {
+        "capital": "Chiapas",
+        "longitud": 16.497999555159172,
+        "latitud": -92.63970339423166,
+        "info": "Total: 123 <br><a target='_blank' href=\"/data/mexico/chiapas.json\">Descargar JSON</a>",
+        "children": "data/mexico/chiapas.json"
+    },
+    {
+        "capital": "Veracruz de Ignacio de la Llave",
+        "longitud": 19.346112382279962,
+        "latitud": -96.69711338579734,
+        "info": "Total: 212 <br><a target='_blank' href=\"/data/mexico/veracruz-de-ignacio-de-la-llave.json\">Descargar JSON</a>",
+        "children": "data/mexico/veracruz-de-ignacio-de-la-llave.json"
+    },
+    {
+        "capital": "Baja California Sur",
+        "longitud": 25.144873396589055,
+        "latitud": -111.22626712355716,
+        "info": "Total: 5 <br><a target='_blank' href=\"/data/mexico/baja-california-sur.json\">Descargar JSON</a>",
+        "children": "data/mexico/baja-california-sur.json"
+    },
+    {
+        "capital": "Puebla",
+        "longitud": 19.12076780693857,
+        "latitud": -97.90565393068613,
+        "info": "Total: 217 <br><a target='_blank' href=\"/data/mexico/puebla.json\">Descargar JSON</a>",
+        "children": "data/mexico/puebla.json"
+    },
+    {
+        "capital": "Yucatán",
+        "longitud": 20.81451524110606,
+        "latitud": -89.12400087086701,
+        "info": "Total: 106 <br><a target='_blank' href=\"/data/mexico/yucatan.json\">Descargar JSON</a>",
+        "children": "data/mexico/yucatan.json"
+    },
+    {
+        "capital": "Baja California",
+        "longitud": 32.16361169573461,
+        "latitud": -116.30314368461677,
+        "info": "Total: 5 <br><a target='_blank' href=\"/data/mexico/baja-california.json\">Descargar JSON</a>",
+        "children": "data/mexico/baja-california.json"
+    },
+    {
+        "capital": "Guanajuato",
+        "longitud": 20.70872388079389,
+        "latitud": -100.97822117196797,
+        "info": "Total: 46 <br><a target='_blank' href=\"/data/mexico/guanajuato.json\">Descargar JSON</a>",
+        "children": "data/mexico/guanajuato.json"
+    },
+    {
+        "capital": "Sonora",
+        "longitud": 29.620420823768377,
+        "latitud": -110.28374094228859,
+        "info": "Total: 72 <br><a target='_blank' href=\"/data/mexico/sonora.json\">Descargar JSON</a>",
+        "children": "data/mexico/sonora.json"
+    },
+    {
+        "capital": "Nayarit",
+        "longitud": 21.612047793914265,
+        "latitud": -104.9045736885445,
+        "info": "Total: 20 <br><a target='_blank' href=\"/data/mexico/nayarit.json\">Descargar JSON</a>",
+        "children": "data/mexico/nayarit.json"
+    },
+    {
+        "capital": "Morelos",
+        "longitud": 18.785273073272382,
+        "latitud": -99.06447562279382,
+        "info": "Total: 33 <br><a target='_blank' href=\"/data/mexico/morelos.json\">Descargar JSON</a>",
+        "children": "data/mexico/morelos.json"
+    },
+    {
+        "capital": "Oaxaca",
+        "longitud": 17.09480291837741,
+        "latitud": -96.85371514883823,
+        "info": "Total: 568 <br><a target='_blank' href=\"/data/mexico/oaxaca.json\">Descargar JSON</a>",
+        "children": "data/mexico/oaxaca.json"
+    },
+    {
+        "capital": "Ciudad de México",
+        "longitud": 19.34508941956005,
+        "latitud": -99.15325161549731,
+        "info": "Total: 16 <br><a target='_blank' href=\"/data/mexico/ciudad-de-mexico.json\">Descargar JSON</a>",
+        "children": "data/mexico/ciudad-de-mexico.json"
+    },
+    {
+        "capital": "México",
+        "longitud": 19.399781139496284,
+        "latitud": -99.41811914832161,
+        "info": "Total: 125 <br><a target='_blank' href=\"/data/mexico/mexico.json\">Descargar JSON</a>",
+        "children": "data/mexico/mexico.json"
+    },
+    {
+        "capital": "Aguascalientes",
+        "longitud": 22.072424679550963,
+        "latitud": -102.3076925037383,
+        "info": "Total: 11 <br><a target='_blank' href=\"/data/mexico/aguascalientes.json\">Descargar JSON</a>",
+        "children": "data/mexico/aguascalientes.json"
+    },
+    {
+        "capital": "Guerrero",
+        "longitud": 17.603072672198287,
+        "latitud": -99.4330865332077,
+        "info": "Total: 81 <br><a target='_blank' href=\"/data/mexico/guerrero.json\">Descargar JSON</a>",
+        "children": "data/mexico/guerrero.json"
+    },
+    {
+        "capital": "Hidalgo",
+        "longitud": 20.414745699235,
+        "latitud": -98.82853802594867,
+        "info": "Total: 84 <br><a target='_blank' href=\"/data/mexico/hidalgo.json\">Descargar JSON</a>",
+        "children": "data/mexico/hidalgo.json"
+    },
+    {
+        "capital": "Chihuahua",
+        "longitud": 28.351050318487175,
+        "latitud": -106.6160957446624,
+        "info": "Total: 67 <br><a target='_blank' href=\"/data/mexico/chihuahua.json\">Descargar JSON</a>",
+        "children": "data/mexico/chihuahua.json"
+    },
+    {
+        "capital": "Tlaxcala",
+        "longitud": 19.342950737026232,
+        "latitud": -98.17709507379548,
+        "info": "Total: 60 <br><a target='_blank' href=\"/data/mexico/tlaxcala.json\">Descargar JSON</a>",
+        "children": "data/mexico/tlaxcala.json"
+    },
+    {
+        "capital": "Nuevo León",
+        "longitud": 25.677848987480008,
+        "latitud": -99.97854959979908,
+        "info": "Total: 51 <br><a target='_blank' href=\"/data/mexico/nuevo-leon.json\">Descargar JSON</a>",
+        "children": "data/mexico/nuevo-leon.json"
+    },
+    {
+        "capital": "Durango",
+        "longitud": 24.936135381568878,
+        "latitud": -104.71183325398005,
+        "info": "Total: 39 <br><a target='_blank' href=\"/data/mexico/durango.json\">Descargar JSON</a>",
+        "children": "data/mexico/durango.json"
+    },
+    {
+        "capital": "Tabasco",
+        "longitud": 17.95144645624265,
+        "latitud": -92.70923853415773,
+        "info": "Total: 17 <br><a target='_blank' href=\"/data/mexico/tabasco.json\">Descargar JSON</a>",
+        "children": "data/mexico/tabasco.json"
+    },
+    {
+        "capital": "Sinaloa",
+        "longitud": 24.79677259561704,
+        "latitud": -107.39045390406226,
+        "info": "Total: 18 <br><a target='_blank' href=\"/data/mexico/sinaloa.json\">Descargar JSON</a>",
+        "children": "data/mexico/sinaloa.json"
+    },
+    {
+        "capital": "Campeche",
+        "longitud": 19.157825375285878,
+        "latitud": -90.49217258430184,
+        "info": "Total: 11 <br><a target='_blank' href=\"/data/mexico/campeche.json\">Descargar JSON</a>",
+        "children": "data/mexico/campeche.json"
+    },
+    {
+        "capital": "Quintana Roo",
+        "longitud": 20.227380499287243,
+        "latitud": -87.61694630944338,
+        "info": "Total: 11 <br><a target='_blank' href=\"/data/mexico/quintana-roo.json\">Descargar JSON</a>",
+        "children": "data/mexico/quintana-roo.json"
+    },
+    {
+        "capital": "Querétaro",
+        "longitud": 20.78795977100644,
+        "latitud": -99.91410127758904,
+        "info": "Total: 18 <br><a target='_blank' href=\"/data/mexico/queretaro.json\">Descargar JSON</a>",
+        "children": "data/mexico/queretaro.json"
+    },
+    {
+        "capital": "San Luis Potosí",
+        "longitud": 22.21180832515034,
+        "latitud": -100.01777980432487,
+        "info": "Total: 58 <br><a target='_blank' href=\"/data/mexico/san-luis-potosi.json\">Descargar JSON</a>",
+        "children": "data/mexico/san-luis-potosi.json"
+    },
+    {
+        "capital": "Jalisco",
+        "longitud": 20.503974427252164,
+        "latitud": -103.47801129744668,
+        "info": "Total: 125 <br><a target='_blank' href=\"/data/mexico/jalisco.json\">Descargar JSON</a>",
+        "children": "data/mexico/jalisco.json"
+    },
+    {
+        "capital": "Zacatecas",
+        "longitud": 22.615264943276273,
+        "latitud": -102.77211444149302,
+        "info": "Total: 58 <br><a target='_blank' href=\"/data/mexico/zacatecas.json\">Descargar JSON</a>",
+        "children": "data/mexico/zacatecas.json"
+    },
+    {
+        "capital": "Colima",
+        "longitud": 19.17199958520997,
+        "latitud": -103.85965601988944,
+        "info": "Total: 10 <br><a target='_blank' href=\"/data/mexico/colima.json\">Descargar JSON</a>",
+        "children": "data/mexico/colima.json"
+    },
+    {
+        "capital": "Tamaulipas",
+        "longitud": 24.21991134477258,
+        "latitud": -98.82317373720538,
+        "info": "Total: 43 <br><a target='_blank' href=\"/data/mexico/tamaulipas.json\">Descargar JSON</a>",
+        "children": "data/mexico/tamaulipas.json"
+    }
+]
