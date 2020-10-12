@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/alexi/Documentos/ProyectoCOVID-Mapa/src/styles.css */"OmL/");
+module.exports = __webpack_require__(/*! /home/radagast/Documentos/ProyectoCOVID-Mapa/src/styles.css */"OmL/");
 
 
 /***/ }),
