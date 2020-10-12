@@ -21,7 +21,12 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/leaflet/dist/images/",
+                "output": "./assets"
+              }
             ],
             "styles": [
               "src/styles.css"
@@ -85,7 +90,12 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/leaflet/dist/images/",
+                "output": "./assets"
+              }
             ],
             "styles": [
               "src/styles.css"
@@ -119,6 +129,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ProyectoCOVID-Mapa"
+    }
+  },
+  "defaultProject": "ProyectoCOVID-Mapa",
+  "cli": {
+    "analytics": "1fc1efe1-dad3-47ec-af58-75a2ad9f8a0c"
+  }
 }
