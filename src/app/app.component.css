@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
+
+  .boton_personalizado{
+    position: relative;
+    text-decoration: none;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 5px;
+    border: 1px solid #0016b0;
+  }
+
+  .boton_personalizado:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+
