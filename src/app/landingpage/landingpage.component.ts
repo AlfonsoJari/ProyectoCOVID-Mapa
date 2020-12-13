@@ -5,11 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './landingpage.component.html',
   styleUrls: ['./landingpage.component.css']
 })
+
 export class LandingpageComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    
+   }
 
   ngOnInit(): void {
+
   }
 
 }
