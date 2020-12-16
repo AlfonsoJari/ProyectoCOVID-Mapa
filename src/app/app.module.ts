@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { MapComponent } from './map/map.component';
 import { StorageService } from "../services/storage.service";
+import { SignupComponent } from './signup/signup.component';
+import { SessionbarComponent } from './sessionbar/sessionbar.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { StorageService } from "../services/storage.service";
     AppComponent,
     LoginComponent,
     LandingpageComponent,
-    MapComponent
+    MapComponent,
+    SignupComponent,
+    SessionbarComponent
   ],
   imports: [
     BrowserModule,

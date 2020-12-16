@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\alfon\Documents\APIS\ProyectoCOVID-Mapa\src\main.ts */"zUnb");
+module.exports = __webpack_require__(/*! C:\Users\braum\Desktop\ProyectoCOVID-Mapa\src\main.ts */"zUnb");
 
 
 /***/ }),
