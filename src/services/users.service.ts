@@ -4,6 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { UserApi } from '../models/userapi';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
+import { NewUserApi } from 'src/models/newuserapi';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,7 @@ export class UsersService {
 
   // Define API
  // apiURL = 'https://kubeet-cfdi-api.appspot.com';
- apiURL = 'http://localhost:8080';
+ apiURL = 'http://104.198.244.0:5018';
 
 //apiURL = 'http://201.147.64.84:8083';
 
@@ -38,6 +39,14 @@ export class UsersService {
     .pipe(
       retry(1),
       catchError(this.MessageError)
+    )
+  }
+
+  signupUser(newUserApi): Observable<NewUserApi> {
+    console.log(JSON.stringify(newUserApi));
+    return this.http.post<NewUserApi>(this.apiURL + '/api/auth/signup', JSON.stringify(newUserApi), this.httpOptions)
+    .pipe(
+      retry(1)
     )
   }
 
