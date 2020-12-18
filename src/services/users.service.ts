@@ -16,7 +16,7 @@ export class UsersService {
 
   // Define API
  // apiURL = 'https://kubeet-cfdi-api.appspot.com';
- apiURL = 'http://104.198.244.0:5018';
+ apiURL = 'https://api-imc-alexi.herokuapp.com';
 
 //apiURL = 'http://201.147.64.84:8083';
 
