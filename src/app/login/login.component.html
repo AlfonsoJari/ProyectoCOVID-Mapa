@@ -7,16 +7,16 @@
   <body>
 
     <div class="login-box">
-      <img src="./img/logo.png" class="avatar" alt="Avatar Image">
-      <h1>Registrate aqui</h1>
+      <img src="../../assets/img-login/usericon.png" class="avatar" alt="Avatar Image">
+      <h1>Ingresa tus datos aqui</h1>
       <form>
         <!-- USERNAME INPUT -->
         <label for="Usuario">Usuario</label>
-        <input type="text" placeholder="Ingresar usuario">
+        <input id="username" [(ngModel)]="username" type="text" name="operator1" placeholder="username">
         <!-- PASSWORD INPUT -->
         <label for="Contraseña">Contrasena</label>
-        <input type="password" placeholder="Ingresar contraseña">
-        <input type="submit" value="Entrar" routerLink="">
+        <input id="password" [(ngModel)]="password" type="password" name="operator2" placeholder="password">
+        <input type="submit" value="Entrar" (click)="addition()">
         <a href="#">¿Olvidaste tu contraseña?</a><br>
         <a href="#">¿Olvidaste tu usuario?</a>
       </form>
