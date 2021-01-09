@@ -4,6 +4,8 @@ import { LoginComponent  } from './login/login.component'
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { MapComponent } from './map/map.component';
 import { SignupComponent } from './signup/signup.component';
+import { LoginGraphComponent } from './login-graph/login-graph.component';
+import { SignupGraphComponent } from './signup-graph/signup-graph.component';
 
 const routes: Routes = [
   {
@@ -21,6 +23,14 @@ const routes: Routes = [
   {
     path:'signup',
     component: SignupComponent
+  },
+  {
+    path:'login-graph',
+    component: LoginGraphComponent
+  },
+  {
+    path:'signup-graph',
+    component: SignupGraphComponent
   }
   
 ];

@@ -10,7 +10,10 @@ import { MapComponent } from './map/map.component';
 import { StorageService } from "../services/storage.service";
 import { SignupComponent } from './signup/signup.component';
 import { SessionbarComponent } from './sessionbar/sessionbar.component';
-
+import { ApolloModule } from 'apollo-angular';
+import { HttpLinkModule } from 'apollo-angular-link-http';
+import { LoginGraphComponent } from './login-graph/login-graph.component';
+import { SignupGraphComponent } from './signup-graph/signup-graph.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +22,15 @@ import { SessionbarComponent } from './sessionbar/sessionbar.component';
     LandingpageComponent,
     MapComponent,
     SignupComponent,
-    SessionbarComponent
+    SessionbarComponent,
+    LoginGraphComponent,
+    SignupGraphComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ApolloModule,
+    HttpLinkModule,
     HttpClientModule,
     FormsModule
   ],

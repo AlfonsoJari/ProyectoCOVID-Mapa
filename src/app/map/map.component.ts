@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import * as L from 'leaflet';
 import { icon, Marker } from 'leaflet';
+import { UsersService } from 'src/services/users.service';
 import { MarkerService } from '../_services/marker.service';
 import { ShapeService } from '../_services/shape.service';
 
@@ -19,6 +20,7 @@ const iconDefault = L.icon({
 });
 L.Marker.prototype.options.icon = iconDefault;
 
+
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
@@ -27,8 +29,9 @@ L.Marker.prototype.options.icon = iconDefault;
 export class MapComponent implements AfterViewInit {
   private map;
   private states;
+  public casosT;
 
-  constructor(private markerService: MarkerService, private shapeService: ShapeService) { }
+  constructor(private markerService: MarkerService, private shapeService: ShapeService, private usersService: UsersService) { }
 
   ngAfterViewInit(): void {
     this.initMap();
@@ -38,6 +41,14 @@ export class MapComponent implements AfterViewInit {
       this.states = states;
       this.initStatesLayer();
     });
+    this.usersService.contar()
+    .subscribe((data: any) => {
+      this.casosT = data;
+      console.log(this.casosT)
+   })
+   
+  //  this.casosT = this.usersService.contar();
+  //  console.log(this.casosT)
   }
   
   private initStatesLayer() {

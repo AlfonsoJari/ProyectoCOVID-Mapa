@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SessionbarComponent implements OnInit {
 
   token=localStorage.getItem("token");
+  usuario=localStorage.getItem("usuario");
 
   constructor() { }
 
@@ -16,9 +17,12 @@ export class SessionbarComponent implements OnInit {
 
   logout(){
     localStorage.removeItem("token");
+    localStorage.removeItem("usuario");
     location.href = window.location.href;;
   }
 
-
+  consultar(){
+    console.log(localStorage.getItem("usuario"))
+  }
 
 }
