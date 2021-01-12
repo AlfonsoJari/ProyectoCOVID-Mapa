@@ -18,7 +18,7 @@ export class LoginGraphComponent implements OnInit {
 
   logeo() {
     if (this.username == "" || this.password == "") {
-      alert("Falta rellenar campos")
+      alert('USUARIO Y CONTRASEÑA REQUERIDOS');
 
     } else {
       //this.cadena = window.location.href;

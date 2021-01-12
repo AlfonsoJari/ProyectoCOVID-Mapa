@@ -5,6 +5,7 @@ import { UserApi } from '../models/userapi';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 import { NewUserApi } from 'src/models/newuserapi';
+import { VisitaModel } from 'src/models/visitaModel';
 
 @Injectable({
   providedIn: 'root'
@@ -12,13 +13,9 @@ import { NewUserApi } from 'src/models/newuserapi';
 
 export class UsersService {
 
-
-
   // Define API
-  // apiURL = 'https://kubeet-cfdi-api.appspot.com';
-  //apiURL = 'https://api-imc-alexi.herokuapp.com';
-
-  apiURL = 'http://34.97.225.164:5002';
+  apiURL = 'http://34.97.225.164:5013';
+  redisURL = 'http://34.97.225.164:5018';
 
   constructor(private http: HttpClient) { }
 
@@ -58,6 +55,25 @@ export class UsersService {
       .pipe(
         retry(1)
       )
+  }
+
+  registrarVisitas(visita): Observable<VisitaModel> {
+    this.httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+      })
+    }
+    console.log(JSON.stringify(visita));
+    return this.http.post<VisitaModel>(this.redisURL + '/rest/visitas/update', JSON.stringify(visita), this.httpOptions);
+  }
+
+  consultarVisitas(): Observable<any> {
+    this.httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+      })
+    }
+    return this.http.get<any>(this.redisURL + '/rest/visitas/1', this.httpOptions);
   }
 
   contar(): Observable<number> {

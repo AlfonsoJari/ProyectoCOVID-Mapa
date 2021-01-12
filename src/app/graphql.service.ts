@@ -8,6 +8,8 @@ import { UserInputType } from './types/userInputType';
 import { StorageService } from "../services/storage.service";
 import { TokenType } from "./types/tokenType"
 import jwt_decode from 'jwt-decode';
+import { VisitaModel } from 'src/models/visitaModel';
+import { UsersService } from 'src/services/users.service';
 @Injectable({
   providedIn: 'root'
 })
@@ -16,12 +18,12 @@ export class GraphqlService {
   public users: UserType[];
   public user: UserType;
   public token;
-  public cadena="";
+  public cadena = "";
   public createdUser: UserType;
   public updatedUser: UserType;
-  constructor(private apollo: Apollo, httpLink: HttpLink, private storageService: StorageService) {
+  constructor(private apollo: Apollo, httpLink: HttpLink, private storageService: StorageService, private usersService: UsersService) {
     apollo.create({
-      link: httpLink.create({ uri: 'http://34.97.225.164:5003/graphql/' }),
+      link: httpLink.create({ uri: 'http://34.68.87.191:5012/graphql/' }),
       cache: new InMemoryCache()
     })
   }
@@ -56,12 +58,19 @@ export class GraphqlService {
       this.user = jwt_decode(this.token);
       console.log(this.user.username);
       localStorage.setItem("usuario", this.user.username);
-      this.cadena = window.location.href;
-      location.href = this.cadena.slice(0, -11);
+      let visita = new VisitaModel;
+      visita.id = 1;
+      visita.visitas = parseInt(sessionStorage.getItem("visitas")) + 1;
+      this.usersService.registrarVisitas(visita).subscribe((data: VisitaModel) => {
+        this.storageService.setSession("visitas", data.visitas);
+        this.cadena = window.location.href;
+        location.href = this.cadena.slice(0, -11);
+      })
+
     })
   }
 
-  public newUser = (username1: string, email1:string, password1: string) => {
+  public newUser = (username1: string, email1: string, password1: string) => {
     this.apollo.mutate({
       mutation: gql`mutation($username: String!, $email: String!, $password: String!){
         createUser(
@@ -77,7 +86,7 @@ export class GraphqlService {
           }
         }
       }`,
-      variables: { username: username1, email:email1, password: password1 }
+      variables: { username: username1, email: email1, password: password1 }
     }).subscribe(result => {
       let resp = result.data;
       this.cadena = window.location.href;

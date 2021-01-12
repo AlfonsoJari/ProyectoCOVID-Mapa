@@ -3,11 +3,7 @@ export class StorageService {
   constructor() { }
 
   getApiUrl() {
-    //return   'https://api-imc-alexi.herokuapp.com'
-    //return   'http://201.147.64.84:8083' 
-    //apiURL = 'https://api-imc-alexi.herokuapp.com';
-
-    return 'http://34.97.225.164:5002';
+    return   'http://34.97.225.164:5013';
   }
 
   setSession(key: string, obj: any) {

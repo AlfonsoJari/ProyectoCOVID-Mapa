@@ -21,6 +21,8 @@ export class SignupGraphComponent implements OnInit {
   newuser() {
     if (this.username == "" || this.password == "" || this.email == "") {
       alert("Falta rellenar campos")
+    } else if (this.password.length <= 5) {
+      alert('Contraseña de 6 caracteres mínimo');
     } else {
       this.service.newUser(this.username, this.email, this.password);
     }
@@ -28,7 +30,7 @@ export class SignupGraphComponent implements OnInit {
 
   redireccion() {
     this.cadena = window.location.href;
-    location.href = this.cadena.slice(0, -12)+'/login-graph';
+    location.href = this.cadena.slice(0, -12) + '/login-graph';
   }
 
 }
